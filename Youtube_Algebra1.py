@@ -1,5 +1,8 @@
 from manim import *
 
+# ======= IN PROGRESS =======
+
+
 class AlgebraIntroduction(Scene):
     def construct(self):
         # Title
@@ -27,7 +30,7 @@ class AlgebraIntroduction(Scene):
 
         # Clear screen
         self.play(FadeOut(variables_intro))
-        
+
         # Solving for x
         self.play(variable_example.animate.shift(UP * 2))
         solve_step1 = MathTex("x + 2 = 5").next_to(variable_example, DOWN)
@@ -57,7 +60,7 @@ class AlgebraIntroduction(Scene):
         # equation_example = MathTex("2x + 3 = 7").scale(1.2)
         # self.play(Transform(equations_intro, equation_example))
         # self.wait(2)
-        
+
         # # Solving the equation
         # self.play(equation_example.animate.shift(UP * 2))
         # eq_solve_step1 = MathTex("2x + 3 = 7").next_to(equation_example, DOWN)
@@ -76,7 +79,7 @@ class AlgebraIntroduction(Scene):
         # self.play(Transform(eq_solve_step4, eq_solve_step5))
         # self.wait(2)
         # self.play(FadeOut(eq_solve_step5), FadeOut(equation_example))
-        
+
         # # Conclusion
         # conclusion = Text("Great job!\nKeep practicing Algebra!", color=GREEN).scale(1.2)
         # self.play(Write(conclusion))
