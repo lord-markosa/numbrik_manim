@@ -1,5 +1,5 @@
 from manim import *
-from constants import NUMBRIK_COLOR, TITLE_TEXT_POSITION
+from utils.constants import NUMBRIK_COLOR, TITLE_TEXT_POSITION
 
 
 class AlgebraIntroduction(Scene):

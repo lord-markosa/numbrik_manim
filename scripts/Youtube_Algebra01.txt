@@ -1,0 +1,38 @@
+<Overture>
+
+We’re all familiar with arithmetic expressions like 2 + 2 = 4, or, 2 + 5 - 6 / 2 = 4. These are straightforward since we can directly calculate their values.
+
+Remember the BODMAS rule: Brackets, Orders (i.e., powers and square roots, etc.), Division and Multiplication, Addition and Subtraction where brackets have the highest preference and subtraction has the lowest.
+
+However, things get a bit more interesting when these expressions are substituted by variables like x, y, alpha, beta. But fear not! We’ll break it down step-by-step.
+
+Let’s start with a simple problem:
+2 +, something, = 5
+
+Now, what is the value of this something? Well, the answer is 3. But, how do we get it?
+Its really simple, Subtract 2 from both sides of the equation. Deducting same thing from 2 equal quantities should also be equal.
+
+2 + ? - 2 = 5 - 2
+which implies something equals 3.
+
+While this "something" notation works temporarily, mathematicians needed a more standardized symbol. So, they chose letters from languages like English and Greek to represent these placeholders. From now on, we’ll write it as "2 + x = 5", where "x" is a variable.
+
+Now, if you’re asked to write "something added 3 times equals 6," you can write: x + x + x = 6. But what if it’s "something added 100 times equals 400"? Instead of writing x a hundred times, we use multiplication: which is repeated addition.
+
+So, we write: 100 times x = 400.
+
+In algebra, the multiplication sign between variables, or, variables and constants are omitted and we directly write it as: 100x = 400.
+
+Things like 2 + x, x + x + x, or, 100x are known as algebraic expressions. So, "A" x + b is an algebraic expression where "A" x is the first term and b is the second one.
+
+Each placeholder like x, y, alpha, beta is called a variable. In the expression "A" x + b, I can put x = 2, "a" = 3, b = 4 to obtain the arithmetic expression 3 times 2 + 4 to obtain the value to be 10.
+
+When we wrote 2 + x = 5, it was an equation, It consists of some algebraic expressions on either side of the equality.
+
+If we write 2 + x > 5, this would represent an inequation or inequality.
+
+Furthermore, repeated addition of a variables result in multiplication but what about repeated multiplication? This actually results in exponent or power of the variable. For example, "x times x times x times x" can be written as x^4.
+
+Today, we covered algebraic expressions, equations, and mathematical notations. In the next class, we’ll explore how to solve equations.
+
+<Thankyou Note>

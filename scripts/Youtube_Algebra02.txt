@@ -1,0 +1,44 @@
+Today we'll explore Algebraic operation.
+Before we begin, there are a few points we need to keep in mind.
+First, we'll group similar terms together. That is, the terms containing same variables or no variables (that is constant) has to be grouped together.
+Then we'll carry out arithmetic operation among these groups.
+For example in this algebraic expression, "2x^2 y" and "5x^2 y" are similar. "3x y" and "2x y" are similar. And the constant terms, "1" and "4" are similar.
+Lets look at a few examples.
+
+Lets add 2x + 5 and 3.
+Here 5 and 3 are constants, so we'll group them together and add them to get 8.
+
+Next, 
+We'll add 2x + 5 and 3x + 2.
+Please note that we cannot add 3 and 5x (the two middle terms) to get 8x because 5 has to be multiplied with x first. Multiplication has a greater priority over addition.
+This was discussed in BODMAS rule in the previous video.
+We'll group 2x and 3x together and 5 and 2 together, then add these among themselves.
+Now, using distributive property we can write 2x + 3x as x multiplied by (2+3).
+We'll compute all the arithmetic operations and write the final expression as 5x + 7.
+
+Next,
+We'll multiply 3 with 2x + 5.
+As mentioned in my previous video, in algebra we'll avoid multiplication sign and if necessary use the dot notation as shown.
+Now, using distributive property we'll distribute 3 to 2x and 5.
+Next, we'll perform the arithmetic operations.
+Please note, that here we can multiply the numeric terms (like 3 and 2) and leave out the variables, this won't affect the final answer.
+
+What if we multiplied 3x with 2x + 5.
+We'll use distributive property and write it as 3x times 2x and 3x times 5.
+We'll club the variables together and numbers together.
+Finally we get 6x^2 + 15x.
+
+Division is similar to multiplication.
+Next we'll perform a little more complicated operation using division.
+We'll divide 2x^2 y + 4x y by 2x.
+Again using the distributive property we can write it like this.
+From the first term we'll strike off one x from the numerator and divide 2 by 2.
+From the second term we'll strike off the only x term and divide 4 by 2.
+Thus, we get x y + 2y.
+
+Now for the last problem we have this expression and will simplify as much as possible.
+First we'll simplify the numerator by clubbing the terms with same variables.
+So sum of these two terms will become 12x^2 y and rest of the terms will remain as it was.
+Now using distributive property we obtain this expression.
+Next, we'll cancel out all the terms common to numerator and denominator.
+We'll get 4x + 2 + y + 6 by x y as our final expression.
