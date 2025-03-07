@@ -1,0 +1,58 @@
+Hello everyone! Welcome back to our algebra adventure. If you haven't watched the last two videos, be sure to check them out from the links in the description. They're packed with foundational knowledge you'll need today.
+
+Today, we’re diving into a fascinating part of Algebra: Equations. Imagine we have a simple expression: 3x + 2. Here, x is like a wild card—it can be any number. Let's play around with it:
+
+If x = 1, our expression becomes 3 times 1 + 2 = 5.
+If x = 2, we get 3 times 2 + 2 = 8.
+What if x = 2 by 3? Yep, it's 3 times 2 by 3 + 2 = 4.
+
+But here's the challenge: What value of x makes this expression equal to 14?
+
+To solve this, we'll turn our expression into an equation: 3x + 2 = 14.
+
+Thus, an equation is a mathematical statement that expresses the equality of two expression (here its 3x + 2 and 14), by connecting them with an equal to sign. 
+
+Now, let’s solve it step-by-step.
+
+Step one: Isolate the variable, x. We start by eliminating the 2 on the left-hand side by subtracting 2 from both sides. That gives us 3x + 2 - 2 = 14 - 2. Simplify to get 3x = 12.
+
+Step two: Solve for x. Next, we get rid of the 3 in 3x by dividing both sides by 3. That gives us 3x divided by 3 = 12 divided by 3. Simplify to find x = 4.
+
+So, when x = 4, our expression 3x + 2 = 14.
+
+Here’s another puzzle for you: For what value of x do the expressions 3x + 2 and x + 6 become equal?
+
+We set up our equation: 3x + 2 = x + 6.
+
+Follow these steps:
+
+Step one: Move constants together. We have 3x + 2 - 2 = x + 6 - 2. This simplifies to 3x = x + 4.
+
+Step two: Group variables together. We have 3x - x = 4. Simplifying gives us 2x = 4.
+
+Step three: Solve for x. 2x divided by 2 = 4 divided by 2. Simplify to get x = 2.
+
+So, when x = 2, both expressions equal 8.
+
+To speed things up, you can move terms directly across the equation, just remember:
+
+Addition turns to subtraction (and vice versa).
+Multiplication turns to division (and vice versa).
+
+Let’s solve this equation together: 4 times 3x + 2 = 4x + 16.
+
+Step one: We can see that both the terms in the right-hand side has a multiple of 4. So, bring the 4 multiplied with 3x + 2 in left-hand side to the right-hand side by dividing the right-hand side with it.
+
+Step two: Move the constant 2 to the right-hand side. We get 3x = x + 4 - 2. Simplifying gives us 3x = x + 2.
+
+Step three: Move the variable x to the left-hand side. We have 3x - x = 2. Simplifying gives us 2x = 2.
+
+Step four: Bring the 2 multiplied with x in the left-hand side to the right hand side. Simplify to find x = 1.
+
+So, for x = 1, the equation holds true.
+
+Quick challenge! Try solving this equation on your own: 5x - 3 = 2x + 9. Hint: Move the variables to one side and the constants to the other, then solve for x. Let’s see what you get.
+
+Understanding how to solve equations forms the foundation for more advanced topics in algebra and beyond. Whether you're tackling quadratic equations, working with functions, or diving into calculus, these skills are essential.
+
+If you enjoyed this tutorial, don’t forget to like and subscribe for more exciting math adventures. Comment below with your solutions, questions, or thoughts. And remember, algebra is like a puzzle where every piece fits perfectly once you know the rules. Keep practicing, and soon you’ll be solving equations in no time. See you in the next video!
