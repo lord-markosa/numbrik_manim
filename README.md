@@ -58,3 +58,7 @@ This project is licensed under the MIT License.
 ## Acknowledgements
 
 This project uses the [Manim](https://www.manim.community/) library created by Grant Sanderson (3Blue1Brown).
+
+## Tutorial
+
+https://github.com/brianamedee/Manim-Tutorials-2021/blob/main/5Tutorial_Adv2D.py

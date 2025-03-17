@@ -1,7 +1,5 @@
 from manim import *
-from utils.displayTitle import displayTitle
-from utils.animateTextSeq import animateTextSeq
-from utils.clearScreen import clearScreen
+from utils import *
 
 
 class Equations(Scene):

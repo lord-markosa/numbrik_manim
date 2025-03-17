@@ -1,8 +1,5 @@
 from manim import *
-from utils.displayTitle import displayTitle
-from utils.animateTextSeq import animateTextSeq
-from utils.clearScreen import clearScreen
-from utils.constants import TITLE_TEXT_POSITION
+from utils import *
 
 
 class AlgebraicOperations(Scene):
@@ -10,7 +7,7 @@ class AlgebraicOperations(Scene):
         displayTitle(self, "Algebraic Operations")
 
         # Rules
-        lastLine1 = animateTextSeq(self, [
+        lines = animateTextSeq(self, [
             Text("Keep in mind"),
             Text("Group similar terms together").scale(0.6),
             Text("Then perform operations (+, -, x, ...)").scale(0.6),
@@ -20,12 +17,12 @@ class AlgebraicOperations(Scene):
 
         self.wait(.5)
 
-        self.play(lastLine1[0].animate.set_color(YELLOW),
-                  lastLine1[6].animate.set_color(YELLOW))
-        self.play(lastLine1[2].animate.set_color(RED),
-                  lastLine1[8].animate.set_color(RED))
-        self.play(lastLine1[4].animate.set_color(GREEN),
-                  lastLine1[10].animate.set_color(GREEN))
+        self.play(lines[-1][0].animate.set_color(YELLOW),
+                  lines[-1][6].animate.set_color(YELLOW))
+        self.play(lines[-1][2].animate.set_color(RED),
+                  lines[-1][8].animate.set_color(RED))
+        self.play(lines[-1][4].animate.set_color(GREEN),
+                  lines[-1][10].animate.set_color(GREEN))
 
         clearScreen(self)
 
