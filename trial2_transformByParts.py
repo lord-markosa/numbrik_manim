@@ -3,14 +3,10 @@ from manim import *
 
 class TransformByParts(Scene):
     def construct(self):
-        start = MathTex('a', '+', 'b')
-        start.set_color_by_tex_to_color_map({
-            'a': BLUE,
-            '+': None,
-            'b': GREEN
-        })
+        start = MathTex("a", "+", "b")
+        start.set_color_by_tex_to_color_map({"a": BLUE, "+": None, "b": GREEN})
 
-        end = MathTex('b', '-', 'a').next_to(start, DOWN)
+        end = MathTex("b", "-", "a").next_to(start, DOWN)
 
         self.play(Write(start))
         self.wait(1)

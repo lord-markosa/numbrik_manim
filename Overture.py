@@ -5,15 +5,18 @@ from utils import *
 class Overture(Scene):
     def construct(self):
         # Opening text
-        title_text = Text("Numbrik", color=NUMBRIK_COLOR).scale(
-            1.5).move_to(TITLE_TEXT_POSITION)
+        title_text = (
+            Text("Numbrik", color=NUMBRIK_COLOR).scale(1.5).move_to(TITLE_TEXT_POSITION)
+        )
 
         # Initialize DOTS
-        dot = Circle(fill_opacity=1,
-                     radius=0.125, stroke_width=0)
+        dot = Circle(fill_opacity=1, radius=0.125, stroke_width=0)
 
-        dots = VGroup(*[dot.copy() for _ in range(3)]
-                      ).arrange(RIGHT).next_to(title_text, DOWN, buff=0.4)
+        dots = (
+            VGroup(*[dot.copy() for _ in range(3)])
+            .arrange(RIGHT)
+            .next_to(title_text, DOWN, buff=0.4)
+        )
 
         dot_colors = [RED, YELLOW, GREEN]
 

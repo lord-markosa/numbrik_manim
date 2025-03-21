@@ -4,14 +4,13 @@ from manim import *
 class ExponentialEquation(Scene):
     def construct(self):
         # Title
-        title = Text('Can you solve it?').to_edge(UP)
+        title = Text("Can you solve it?").to_edge(UP)
         self.play(Write(title))
         self.wait(1)
 
         # Equations
-        eq1 = MathTex("2^{x+1} + 3^{y+1} = 43").shift(2*UP)
-        eq2 = MathTex("3\cdot2^x + 2\cdot3^y = 42").next_to(eq1,
-                                                            DOWN, buff=0.5)
+        eq1 = MathTex("2^{x+1} + 3^{y+1} = 43").shift(2 * UP)
+        eq2 = MathTex("3\cdot2^x + 2\cdot3^y = 42").next_to(eq1, DOWN, buff=0.5)
 
         self.play(Write(eq1))
         self.play(Write(eq2))
@@ -19,7 +18,7 @@ class ExponentialEquation(Scene):
 
         # Replace equation 1 with simplified equation
         simpEq1 = MathTex("2\cdot2^x + 3\cdot3^y = 43").move_to(eq1)
-#         step2 = MathTex(r"6x + 4y = 84").next_to(step1, DOWN, buff=0.5)
+        #         step2 = MathTex(r"6x + 4y = 84").next_to(step1, DOWN, buff=0.5)
 
         self.play(ReplacementTransform(eq1, simpEq1))
         self.wait(1)

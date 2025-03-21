@@ -5,8 +5,8 @@ class RightAngledTriangleWithIncircle(Scene):
     def construct(self):
         # Define points for the right-angled triangle
         A = np.array([-4, -1, 0])  # Vertex A
-        B = np.array([4, -1, 0])   # Vertex B (base)
-        C = np.array([-4, 3, 0])   # Vertex C (height)
+        B = np.array([4, -1, 0])  # Vertex B (base)
+        C = np.array([-4, 3, 0])  # Vertex C (height)
 
         # Create the triangle using Polygon
         triangle = Polygon(A, B, C, color=WHITE)

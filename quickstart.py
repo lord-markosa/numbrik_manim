@@ -53,7 +53,9 @@ class DifferentRotations(Scene):
         left_square = Square(color=BLUE, fill_opacity=0.7).shift(2 * LEFT)
         right_square = Square(color=GREEN, fill_opacity=0.7).shift(2 * RIGHT)
         self.play(
-            left_square.animate.rotate(2*PI), Rotate(right_square, angle=PI), run_time=2
+            left_square.animate.rotate(2 * PI),
+            Rotate(right_square, angle=PI),
+            run_time=2,
         )
         self.wait()
 
@@ -84,6 +86,5 @@ class TwoTransforms(Scene):
 class DisplayText(Scene):
     def construct(self):
         self.play(
-            Write(Text("This is the first text that I wrote")),
-            run_time=5
+            Write(Text("This is the first text that I wrote")), run_time=5
         )  # display the text on screen
