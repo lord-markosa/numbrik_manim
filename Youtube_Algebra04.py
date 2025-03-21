@@ -4,14 +4,22 @@ from utils import *
 
 class Quadratics(Scene):
     def construct(self):
-        # self.intro_scene()
-        # self.overview()
-        # self.basic_graph()
-        # self.graph_parabola()
-        # self.move_parabola()
+        self.intro_scene()
+        clearScreen(self)
+        self.overview()
+        clearScreen(self)
+        self.basic_graph()
+        clearScreen(self)
+        self.graph_parabola()
+        clearScreen(self)
         self.factorization_example1()
+        clearScreen(self)
         self.factorization_example2()
-        # self.complete_the_square_example()
+        clearScreen(self)
+        self.factorization_example3()
+        clearScreen(self)
+        self.complete_the_square_example()
+        clearScreen(self)
 
     def intro_scene(self):
         displayTitle(self, "Quadratic Expressions")
@@ -33,7 +41,7 @@ class Quadratics(Scene):
             MathTex("value = 1^2 = 1"),
             Text("For x = 2, we get").scale(0.6),
             MathTex("value = 2^2 = 4"),
-            Text("Let's plot theses values on graph").scale(0.5),
+            Text("Let's graph these").scale(0.5),
         ])
 
         clearScreen(self)
@@ -74,7 +82,7 @@ class Quadratics(Scene):
         for i, (x, y) in enumerate(zip(discreteX, discreteY)):
             dot = Dot(point=plane.c2p(x, y), color=GREEN_E)
             row = value_table.get_rows()[i+1]  # +1 to skip header row
-            self.play(AnimationGroup(Create(dot), Create(row), lag_ratio=0.5))
+            self.play(AnimationGroup(Create(row), Create(dot), lag_ratio=0.5))
 
         parabola = plane.plot(
             sq_func, x_range=[-4, 4]).set_color(NUMBRIK_COLOR)
@@ -170,10 +178,8 @@ class Quadratics(Scene):
             .set_color_by_tex_to_color_map({"p": ORANGE, "q": YELLOW, "5": GREEN}),
             MathTex("6", "=", "p", "\\cdot", "q")
             .set_color_by_tex_to_color_map({"p": ORANGE, "q": YELLOW, "6": BLUE}),
-            MathTex("6", "=", "1", "\\cdot", "6")
-            .set_color_by_tex_to_color_map({"1": ORANGE, "6": YELLOW}),
+            MathTex("6", "=", "1", "\\cdot", "6"),
             MathTex("6", "=", "2", "\\cdot", "3")
-            .set_color_by_tex_to_color_map({"2": ORANGE, "3": YELLOW}),
         ],
             shift_val=3*RIGHT)
 
@@ -185,8 +191,6 @@ class Quadratics(Scene):
             MathTex("x(x + 2) + 3(x + 2)"),
             MathTex("(x + 2)(x + 3)"),
         ])
-
-        clearScreen(self)
 
     def factorization_example2(self):
         factorize_title = MathTex(
@@ -220,6 +224,39 @@ class Quadratics(Scene):
 
         self.animate_factorization_steps(lines)
 
+    def factorization_example3(self):
+        factorize_title = MathTex(
+            "3", "x^2", "-5x", "-12").to_edge(UP).set_color_by_tex_to_color_map({"-12": BLUE, "-5x": GREEN, "3": BLUE})
+        self.play(Write(factorize_title))
+        self.wait(1)
+
+        lines1 = animateTextSeq(self, [
+            MathTex("-5", "=", "p", "+", "q")
+            .set_color_by_tex_to_color_map({"p": ORANGE, "q": YELLOW, "-5": GREEN}),
+            MathTex("-12\\cdot3", "=", "p", "\\cdot", "q")
+            .set_color_by_tex_to_color_map({"p": ORANGE, "q": YELLOW, "-12\\cdot3": BLUE}),
+            MathTex("-36", "=", "-1", "\\cdot", "36"),
+            MathTex("-36", "=", "-2", "\\cdot", "18"),
+            MathTex("-36", "=", "-3", "\\cdot", "12"),
+            MathTex("-36", "=", "-4", "\\cdot", "9"),
+        ],
+            shift_val=3*RIGHT+DOWN)
+
+        correctSplit = MathTex("-36", "=", "4", "\\cdot",
+                               "-9").next_to(lines1[-1], 0)
+
+        self.play(Transform(lines1[-1], correctSplit))
+        self.wait(2)
+
+        lines = [
+            MathTex("3x^2", "-5x", "-12").set_color_by_tex("-5x", GREEN),
+            MathTex("3x^2", "+ 4x - 9x", "-12").set_color_by_tex("4x", GREEN),
+            MathTex("x(3x + 4) - 3(3x + 4)"),
+            MathTex("(3x + 4)(x - 3)"),
+        ]
+
+        self.animate_factorization_steps(lines)
+
     def complete_the_square_example(self):
         displayTitle(self, "Completing the square")
         clearScreen(self)
@@ -235,19 +272,24 @@ class Quadratics(Scene):
 
         finalEqn = MathTex("\\left( x + \\frac{5}{2} \\right)^2", "- \\frac{25}{4} + 6").next_to(
             lastEqn1[-1], DOWN, buff=0.5)
+        
+        finalEqn_ = MathTex("\\left( x + \\frac{5}{2} \\right)^2", "- \\frac{1}{4}").next_to(finalEqn, 0)
 
         justifyingExp1 = MathTex(
             "(a + b)^2 = a^2 + 2ab + b^2").next_to(finalEqn, RIGHT, buff=0.7).scale(0.8)
-        self.play(Write(justifyingExp1))
+        self.play(Write(justifyingExp1), run_time=1)
 
-        self.play(TransformFromCopy(lastEqn1[-1][0: 2], finalEqn[0]))
-        self.play(TransformFromCopy(lastEqn1[-1][2], finalEqn[1]))
+        self.play(TransformFromCopy(lastEqn1[-1][0: 2], finalEqn[0]), run_time = 1)
+        self.play(TransformFromCopy(lastEqn1[-1][2], finalEqn[1]), run_time = 1)
+
+        self.play(Transform(finalEqn, finalEqn_), run_time = 1.5)
+        self.play(finalEqn_.animate.set_color(NUMBRIK_COLOR), run_time = 1)
 
         clearScreen(self)
 
         lastEqn2 = animateTextSeq(self, [
             MathTex(
-                "\\left( x + \\frac{5}{2} \\right)^2 - \\frac{25}{4} + 6"),
+                "\\left( x + \\frac{5}{2} \\right)^2 - \\frac{1}{4}").set_color(NUMBRIK_COLOR),
             MathTex("\\left( x + \\frac{5}{2} \\right)^2 - \\frac{1}{2^2}"),
             MathTex(
                 "\\left( x + \\frac{5}{2} - \\frac{1}{2}\\right)", "\\left( x + \\frac{5}{2} + \\frac{1}{2}\\right)"),
