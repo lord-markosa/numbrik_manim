@@ -17,7 +17,6 @@ class Solve(Scene):
                 ),
                 MathTex(
                     "x^4+x^3+8x^2+ax+b",
-                    "",
                     color=BLACK,
                 ),
             )
@@ -27,6 +26,10 @@ class Solve(Scene):
         )
 
         self.play(FadeIn(question, shift=UP))
+        self.wait(2)
+
+        highlight1 = SurroundingRectangle(question[1], buff=0.1, corner_radius=0.1)
+        self.play(Create(highlight1))
         self.wait(1)
 
         step1 = (
@@ -54,6 +57,8 @@ class Solve(Scene):
         self.play(FadeIn(step1, shift=UP * 0.2))
         self.wait(1)
         self.play(Write(step2))
+        self.wait(1)
+        self.play(FadeOut(highlight1))
         self.wait(2)
         self.play(FadeOut(step1, step2))
         self.wait(1)

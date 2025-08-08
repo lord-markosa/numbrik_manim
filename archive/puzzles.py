@@ -159,3 +159,8 @@ class Problem4(Scene):
         clearScreen(self)
 
         subscribe(self)
+
+
+class Subscribe(Scene):
+    def construct(self):
+        subscribe(self)
