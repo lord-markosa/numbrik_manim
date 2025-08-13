@@ -211,7 +211,7 @@ class GeometryExplanation(Scene):
             [
                 r"\angle BAE + \angle BDE = 180^\circ",
                 r"\Rightarrow \angle BAE = 90^\circ",
-                r"\text{In } \triangle ABC:", 
+                r"\text{In } \triangle ABC:",
                 r"\angle A + \angle B + \angle C = 180^\circ",
                 r"\Rightarrow 90^\circ + 3x + x = 180^\circ",
                 r"\Rightarrow x = 22.5^\circ",

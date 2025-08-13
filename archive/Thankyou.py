@@ -4,16 +4,16 @@ from utils import *
 
 class SubscribeEndScreen(Scene):
     def construct(self):
-        # Thank You text
-        # thank_you = (
-        #     Text("Thank you for watching", font="Georgia", font_size=60)
-        #     .set_color_by_gradient(TEAL, GREEN_N100)
-        #     .move_to(TITLE_TEXT_POSITION)
-        # )
+        # Thankyou text
+        thank_you = (
+            Text("Thank you for watching", font="Georgia", font_size=60)
+            .set_color_by_gradient(TEAL, GREEN_N100)
+            .move_to(TITLE_TEXT_POSITION)
+        )
 
-        # self.play(FadeIn(thank_you, shift=UP), run_time=1.5)
+        self.play(FadeIn(thank_you, shift=UP), run_time=1.5)
 
-        # clearScreen(self, 0.1)
+        clearScreen(self, 0.1)
 
         # Subscribe button
         button = RoundedRectangle(

@@ -79,17 +79,14 @@ def solidHighlight(self, part, buff=0.05, wait_time=1):
 
     highlights = [
         BackgroundRectangle(
-            p, buff=buff, corner_radius=0.12, color=YELLOW, fill_opacity=1
+            p, buff=buff, corner_radius=0.12, color=YELLOW, fill_opacity=1, z_index=-10
         )
         for p in parts
     ]
 
-    for highlight in highlights:
-        highlight.z_index = -10
-
-    self.play(Create(VGroup(*highlights)))
+    self.play(FadeIn(highlight) for highlight in highlights)
     self.wait(wait_time)
-    self.play(*[highlight.animate.set_opacity(0) for highlight in highlights])
+    self.play(highlight.animate.set_opacity(0) for highlight in highlights)
     self.wait(1)
 
 
@@ -160,3 +157,32 @@ def getTriangularRegion(A, B, C, color=YELLOW):
     triangleABC_area = Polygon(A, B, C, color=color, fill_opacity=1, stroke_width=0)
     triangleABC_area.z_index = -10
     return triangleABC_area
+
+
+def lengthMarker(P1, P2, label, scale=1, buff=0):
+    length_marker = DoubleArrow(
+        P1,
+        P2,
+        color=GREY_N400,
+        stroke_width=4,
+        buff=buff,
+        tip_length=DEFAULT_ARROW_TIP_LENGTH * scale,
+    ).set_z_index(-20)
+
+    length_label = nMath(label).next_to(length_marker, 0).scale(scale)
+
+    length_label_background = BackgroundRectangle(
+        length_label, color=WHITE, buff=0.1, fill_opacity=1
+    ).set_z_index(-10)
+
+    return length_marker, length_label, length_label_background
+
+
+def fadeInText(text):
+    return LaggedStart(*[FadeIn(char) for char in text], lag_ratio=0.05)
+
+
+def fadeInTex(text):
+    return LaggedStart(
+        *[FadeIn(char) for line in text for char in line], lag_ratio=0.05
+    )

@@ -9,7 +9,17 @@ This project contains various scripts created using the Manim library to visuali
 
 ## Installation
 
--   Follow the [Manim community guide](https://docs.manim.community/en/stable/installation.html)
+-   Install python from [website](https://www.python.org/downloads/)
+-   Install brew. Copy paste the link given in [brew.sh](brew.sh) in terminal
+-   Install git (for this repository). [Git](https://git-scm.com/downloads/mac) or simply use `brew install git`
+-   `uv` for manim didn't work for me. So I did the following to install manim:
+    - `brew install pkg-config`
+    - `brew install cmake`
+    - `brew install cairo`
+    - `brew install manim`
+-   Download latex for manim. Instruction given in the docs below.
+-   Docs: [Manim community guide](https://docs.manim.community/en/stable/installation.html)
+
 
 ## Running Manim Scripts
 
