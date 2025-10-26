@@ -1,0 +1,32 @@
+show thumbnail (for pt video)
+show the problem ss by Brilliant
+and then show the clip from his video
+show bar graph based on the options selected
+
+show visual for /-4 /-9 != /-4x-9 != 6
+
+real writing for the -1 = 1 demo
+
+sqrt(a) sqrt(b) = sqrt(ab)
+
+(-5)^2/3
+
+a^x a>0 where x in R
+
+x^(n/m) where (m, n) = 1 \\ie coprime and m is odd
+
+(-1)^(1/3) == -1
+but (-1)^(2/6) = write accordingly
+
+z = a+ib  = re^(itheta)
+
+any complex number z = a+ib  = re^(itheta)
+can be written as this
+
+Now when I can write -25 as 25*e^(i pi) = -25 times (cos(pi) + i sin(pi))
+
+Now cos theta and sin theta are periodic functions with a period of 2*pi
+
+cos(theta  +2pi) + isin(theta+2pi) is same as
+
+25*e^(2n+1)pi ^2/3

@@ -140,3 +140,4 @@ class trial21(Scene):
         self.play(Write(equation_step_10), run_time=3)
         self.play(Transform(equation_step_10, equation_step_10_))
         self.wait(5)
+

@@ -21,7 +21,7 @@ class Solve(Scene):
         # R = 4  # Radius of the main quarter circle
 
         f = 0.8  # Scale factor
-        A = ORIGIN + 2.7* LEFT
+        A = ORIGIN + 2.7 * LEFT
         B = A + 6 * f * RIGHT
         C = B + 2 * f * UP
         D = C + 5 * f * LEFT

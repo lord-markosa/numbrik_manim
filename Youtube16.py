@@ -163,4 +163,4 @@ class FactorialDivisibility(Scene):
         self.play(FadeIn(final2))
         self.wait(1)
         self.play(FadeIn(final, scale=1.2))
-        highlight(self, final, buff=0.2, wait_time=4)
+        highlight(self, final, buff=0.2, wait_time=5)
